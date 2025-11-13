@@ -1,1 +1,1 @@
-export {MainLayout} from "./principal"
+export {MainLayout} from "./layoutHome"

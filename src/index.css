@@ -2,12 +2,14 @@
 
 
 :root {
-  --heroblue: #1D2846;
+  --headerblue: #1D2846;
+  --darkblue: #1D2846;
 
 }
 
 @theme inline {
-  --color-heroblue: var(--heroblue);
+  --color-headerblue: var(--headerblue);
+  --color-darkblue: var(--darkblue);
 
 }
 

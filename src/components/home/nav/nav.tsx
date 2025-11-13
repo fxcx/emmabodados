@@ -1,7 +1,7 @@
 export default function Nav () {
     return (
         <div>
-            Nav
+            <a href="">Inicio</a>
         </div>
     )
 }
