@@ -36,11 +36,7 @@ export const AboutCards = ({
       {/* Imagen full-width con overlay */}
       <div id="team" className="relative w-full">
         <div className="w-full aspect-square">
-          <img
-            src={src}
-            alt={title}
-            className="w-full h-full object-cover"
-          />
+          <img src={src} alt={title} className="w-full h-full object-cover" />
         </div>
 
         {/* Overlay con degradé y título/subtítulo */}
@@ -95,11 +91,20 @@ export const AboutCards = ({
           ))}
         </div>
 
-        {/* Description */}
-        <p className="text-xs sm:text-sm text-navyDeep leading-[1.2]">
-          {description}
-        </p>
+        <div className="grid place-items-end pt-2">
+          <div className={`${showDescription ? "block" : "hidden sm:block"}`}>
+            <p className="text-xs sm:text-sm text-navyDeep leading-[1.2]">
+              {description}
+            </p>
+          </div>
 
+          <button
+            className="relative sm:hidden text-amber-50 rounded-full p-1 mt-2 w-24 bg-gray-900 text-xs sm:text-sm "
+            onClick={() => setShowDescription(!showDescription)}
+          >
+            {showDescription ? "Ocultar" : "Ver perfil"}
+          </button>
+        </div>
         {children && <div className="mt-2 text-navyDeep">{children}</div>}
       </div>
     </section>
