@@ -52,7 +52,7 @@ export const Form = () => {
   }
 
   return (
-    <section className="relative grid place-content-center pt-6 md:pt-12 lg:pt-16 lg:pb-16">
+    <section className="relative grid place-content-center pt-22 pb-32">
       <ImageUtils
         src={allImages.fondoForm}
         alt="Fondo formulario de contacto"
@@ -63,7 +63,7 @@ export const Form = () => {
         Envianos tu consulta
       </div>
       <form
-        className="bg-amber-50 p-6 relative grid gap-8 w-[799px]"
+        className="bg-amber-50 p-6 relative grid gap-8 md:w-[799px]"
         onSubmit={handleSubmit}
       >
         <div className="flex flex-col">

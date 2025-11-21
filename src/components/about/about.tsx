@@ -14,8 +14,8 @@ export const About = () => {
           />
         </div>
 
-        <div className="flex flex-col text-center mb-8 sm:mb-12 lg:mb-16">
-          <div className="relative sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16">
+        <div className="flex flex-col text-center pb-8 sm:mb-12 lg:mb-16">
+          <div className="relative  p-4  sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16">
             <h2 className="text-left text-2xl font-bold text-white pb-2 sm:pb-2">
               Nuestro Estudio
             </h2>
@@ -33,7 +33,7 @@ export const About = () => {
             </div>
           </div>
 
-          <article className="grid p-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10 pt-8 sm:pt-12 lg:pt-16">
+          <article className="grid p-6   grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10 pt-8 sm:pt-12 lg:pt-16">
             <AboutCards
               src={allImages.pablo}
               title="Pablo Etcheverry"
