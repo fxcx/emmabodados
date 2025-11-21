@@ -1,10 +1,11 @@
+import { useState } from "react";
 interface AboutCardsProps {
-  title: string
-  subtitle: string
-  chip: string[]
-  src: string
-  description: string
-  children?: React.ReactNode
+  title: string;
+  subtitle: string;
+  chip: string[];
+  src: string;
+  description: string;
+  children?: React.ReactNode;
 }
 
 export const AboutCards = ({
@@ -15,6 +16,7 @@ export const AboutCards = ({
   description,
   children,
 }: AboutCardsProps) => {
+  const [showDescription, setShowDescription] = useState<boolean>(false);
   return (
     <section
       className="
@@ -101,5 +103,5 @@ export const AboutCards = ({
         {children && <div className="mt-2 text-navyDeep">{children}</div>}
       </div>
     </section>
-  )
-}
+  );
+};
