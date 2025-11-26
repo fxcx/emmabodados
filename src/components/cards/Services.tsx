@@ -1,5 +1,5 @@
-import { ServiceCard } from "./ServiceCard";
-import { CardList } from "./CardList";
+import { ServiceCard } from "./serviceCard";
+import { CardList } from "./cardList";
 
 export const Services = () => {
   return (
