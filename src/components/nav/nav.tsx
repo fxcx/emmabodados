@@ -25,7 +25,7 @@ export default function Nav() {
         <div className="hidden md:flex md:flex-1 justify-center">
           <ul className="flex gap-8 text-inkBlue font-medium">
             <li>
-              <a href="/" className="hover:opacity-70 transition">
+              <a href="#inicio" className="hover:opacity-70 transition">
                 Inicio
               </a>
             </li>
