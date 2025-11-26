@@ -1,4 +1,5 @@
 import { useState } from "react";
+
 interface AboutCardsProps {
   title: string;
   subtitle: string;
@@ -17,11 +18,12 @@ export const AboutCards = ({
   children,
 }: AboutCardsProps) => {
   const [showDescription, setShowDescription] = useState<boolean>(false);
+
   return (
     <section
       className="
         relative 
-        bg-softGray              /* fondo de la card */
+        bg-softGray
         w-full 
         max-w-88
         sm:max-w-[24rem]
@@ -31,6 +33,8 @@ export const AboutCards = ({
         overflow-hidden
         shadow-lg hover:shadow-xl 
         transition-shadow duration-300
+        h-full              /* 👈 la card puede llenar la columna */
+        flex flex-col       /* 👈 imagen arriba, contenido abajo */
       "
     >
       {/* Imagen full-width con overlay */}
@@ -44,7 +48,7 @@ export const AboutCards = ({
           <div
             className="
               bg-gradient-to-t 
-              from-softGray via-softGray/95 to-transparent  /* match fondo */
+              from-softGray via-softGray/95 to-transparent
               w-full h-full
             "
           >
@@ -65,10 +69,10 @@ export const AboutCards = ({
         className="
           px-4 pt-2 pb-4
           text-shadow-blue-950 
-          grid 
-          grid-cols-1 
-          gap-2
           text-left
+          flex-1            /* 👈 este bloque ocupa el resto, pero sin estirar raro internos */
+          flex flex-col
+          gap-2
         "
       >
         {/* Chips */}
@@ -80,7 +84,7 @@ export const AboutCards = ({
                 inline-block 
                 text-navyDeep
                 px-3 py-1 
-                border border-skyBlue    /* borde del chip */
+                border border-skyBlue
                 rounded-full 
                 text-xs sm:text-sm 
                 whitespace-nowrap
@@ -91,20 +95,28 @@ export const AboutCards = ({
           ))}
         </div>
 
-        <div className="grid place-items-end pt-2">
-          <div className={`${showDescription ? "block" : "hidden sm:block"}`}>
+        {/* Descripción + botón (debajo de los chips, no pegado al fondo de la card) */}
+        <div className="pt-2 flex flex-col items-end gap-2">
+          <div className={showDescription ? "block" : "hidden sm:block"}>
             <p className="text-xs sm:text-sm text-navyDeep leading-[1.2]">
               {description}
             </p>
           </div>
 
           <button
-            className="relative sm:hidden text-amber-50 rounded-full p-1 mt-2 w-24 bg-gray-900 text-xs sm:text-sm "
+            className="
+              relative sm:hidden
+              text-amber-50
+              rounded-full p-1 mt-1 w-24
+              bg-gray-900
+              text-xs sm:text-sm
+            "
             onClick={() => setShowDescription(!showDescription)}
           >
             {showDescription ? "Ocultar" : "Ver perfil"}
           </button>
         </div>
+
         {children && <div className="mt-2 text-navyDeep">{children}</div>}
       </div>
     </section>

@@ -70,11 +70,11 @@ useEffect(() => {
         className="absolute inset-0 w-full h-full object-cover z-0"
       />
 
-      <div className="relative bg-blue-950 text-white p-4 rounded-t-lg text-center text-lg md:text-xl">
+      <div className="relative bg-navyDeep text-cloudGray p-4 rounded-t-lg text-center text-lg md:text-xl">
         Envianos tu consulta
       </div>
       <form
-        className="bg-amber-50 p-4 relative grid gap-8 md:w-[799px] w-[299px]"
+        className="bg-cloudGray p-4 relative grid gap-8 md:w-[799px] w-[299px]"
         onSubmit={handleSubmit}
       >
         <div className="flex flex-col">
@@ -87,7 +87,7 @@ useEffect(() => {
                 type="text"
                 name="nombre_empresa"
                 placeholder="Ej. Julia - AYMA S.A."
-                className="overflow-x-auto whitespace-nowrap p-1 text-sm border rounded-full border-blue-400 text-center w-full"
+                className="overflow-x-auto whitespace-nowrap p-1 text-sm border rounded-full border-skyBlue text-center w-full"
                 value={form.nombre_empresa}
                 onChange={handleChange}
               />
@@ -101,7 +101,7 @@ useEffect(() => {
                 type="email"
                 name="email"
                 placeholder="Ej. julia@ayma.com"
-                className="overflow-x-auto whitespace-nowrap p-1 text-sm border rounded-full border-blue-400 text-center w-full"
+                className="overflow-x-auto whitespace-nowrap p-1 text-sm border rounded-full border-skyBlue text-center w-full"
                 value={form.email}
                 onChange={handleChange}
               />
@@ -114,7 +114,7 @@ useEffect(() => {
                 type="tel"
                 name="telefono"
                 placeholder="Ej. +54 9 11 1234 5678"
-                className="overflow-x-auto whitespace-nowrap p-1 text-sm border rounded-full border-blue-400 text-center w-full"
+                className="overflow-x-auto whitespace-nowrap p-1 text-sm border rounded-full border-skyBlue text-center w-full"
                 value={form.telefono}
                 onChange={handleChange}
               />
@@ -129,7 +129,7 @@ useEffect(() => {
               type="text"
               name="motivo"
               placeholder="Compliance, Panel Económico"
-              className="overflow-x-auto whitespace-nowrap p-1 text-sm border rounded-2xl border-blue-400 text-center w-full h-[200px]"
+              className="overflow-x-auto whitespace-nowrap p-1 text-sm border rounded-2xl border-skyBlue text-center w-full h-[200px]"
               value={form.motivo}
               onChange={handleChange}
             />
@@ -139,7 +139,7 @@ useEffect(() => {
         <div className="flex flex-col pt-8 pb-6 md:col-span-2">
           <button
             type="submit"
-            className="bg-blue-950 text-white p-3 rounded-full mt-4 hover:bg-blue-700 transition-colors w-full md:w-1/3 md:mx-auto"
+            className="bg-navyDeep text-softGray p-3 rounded-full mt-4 hover:bg-skyBlue transition-colors w-full md:w-1/3 md:mx-auto"
           >
             Enviar consulta
           </button>

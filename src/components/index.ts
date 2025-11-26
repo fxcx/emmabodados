@@ -5,4 +5,4 @@ export { default as Nav } from './nav/nav';
 export { Footer } from './footer/footer';
 export { Logo } from './logo/logo';
 export { Form } from './form/form';
-export {Services} from "./cards/Services" 
+export {Services} from "./cards/Services";
