@@ -1,13 +1,13 @@
 import logo from "@/assets/img/logo-headder.png"
-import heroImg from "@/assets/img/heroImg.png"
-import fondoAbout from "@/assets/img/fondo about.png"
-import logoFooter from "@/assets/img/logo-footer.png"
-import francisco from "@/assets/img/francisco.jpg"
-import julieta from "@/assets/img/julieta.jpg"
-import pablo from "@/assets/img/pablo.jpg"
-import heroImgMobile from "@/assets/img/heroImgMobile.png"
+import heroImg from "@/assets/img/heroImg.webp"
+import fondoAbout from "@/assets/img/fondo about.webp"
+import logoFooter from "@/assets/img/logo-footer.webp"
+import francisco from "@/assets/img/francisco.webp"
+import julieta from "@/assets/img/julieta.webp"
+import pablo from "@/assets/img/pablo.webp"
+import heroImgMobile from "@/assets/img/heroImgMobile.webp"
 import nombres from "@/assets/img/nombres.png"
-import fondoForm from "@/assets/img/fondo-form.png"
+import fondoForm from "@/assets/img/fondo-form.webp"
 
 export type ImageT = {
     src: string;
